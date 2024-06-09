@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nature</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/icon/main.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand p-0">
+            <img class="img-fluid me-3" src="img/icon/icon-10.png" alt="Icon">
+            <h1 class="m-0 text-primary">Elefana</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="#Elements" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Elements</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="air.html" class="dropdown-item">Air</a>
+                        <a href="water.html" class="dropdown-item">Water</a>
+                        <a href="fire.html" class="dropdown-item">Fire</a>
+                        <a href="earth.html" class="dropdown-item">Earth</a>
+                        <a href="sky.html" class="dropdown-item">Sky</a>
+                    </div>
+                </div>
+                <a href="#about" class="nav-item nav-link">About Us</a>
+                <a href="#contact" class="nav-item nav-link">Contact us</a>
+                <a href="portfolio/index.html" class="nav-item nav-link">Portfolio</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-dark p-0 mb-5">
+        <div class="row g-0 flex-column-reverse flex-lg-row">
+            <div class="col-lg-6 p-0 wow fadeIn" data-wow-delay="0.1s">
+                <div class="header-bg h-100 d-flex flex-column justify-content-center p-5">
+                    <h1 class="display-4 text-light mb-5">Find Life And Enjoy The Nature</h1>
+                    <div class="d-flex align-items-center pt-4 animated slideInDown">
+                        <a href="" class="btn btn-primary py-sm-3 px-3 px-sm-5 me-5">Read More</a>
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/7PIji8OubXU?si=gNhoq7VvjhUqgHB9" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h6 class="text-white m-0 ms-4 d-none d-sm-block">Watch Video</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="owl-carousel header-carousel">
+                    <div class="owl-carousel-item">
+                        <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                    </div>
+                    <div class="owl-carousel-item">
+                        <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                    </div>
+                    <div class="owl-carousel-item">
+                        <img class="img-fluid" src="img/carousel-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container" id="about">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p><span class="text-primary me-2">#</span>Welcome To Elefana</p>
+                    <h1 class="display-5 mb-4">Why You Should Visit <span class="text-primary">Elefana</span> Park!</h1>
+                    <span>🌿🐾
+
+                        Elefana: Connecting Children with Nature<br>
+
+                        Elefana is a unique initiative inspired by the wonders of nature and the wisdom found in Wikipedia. Our mission is to foster a deep connection between the next generation and the natural world. Through our interactive website, we introduce children to the five fundamental elements—earth, water, fire, air, and ether—by exploring the fascinating animals associated with each element.<br>
+
+                        🌍 Earth: Discover the creatures that thrive on land—the resilient mammals, reptiles, and insects that call the soil their home.<br>
+
+                        💧 Water: Dive into aquatic ecosystems and meet the graceful fish, playful dolphins, and mysterious sea creatures that inhabit oceans, rivers, and lakes.<br>
+
+                        🔥 Fire: Explore the fiery realm of birds—the vibrant plumage, soaring eagles, and songbirds that symbolize passion and transformation.<br>
+
+                        💨 Air: Take flight with the avian wonders—the swift swallows, majestic owls, and colorful parrots that dance on the winds.<br>
+
+                        ✨ Ether (Spirit): Uncover the mystical and endangered species—the elusive snow leopards, wise elephants, and ethereal butterflies that remind us of interconnectedness.<br>
+
+                        Let's inspire the next generation to cherish and protect our beautiful planet! 🌎🌱🦋</span>
+
+                    <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="img-border">
+                        <img class="img-fluid" src="img/ele.jpeg" alt="img not found">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+<!-- Testimonial Start -->
+<div class="container-xxl py-5">
+    <div class="container" id="Elements">
+        <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Elements</h1>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+            <div class="testimonial-item text-center">
+                <a href="air.html">
+                    <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/Air.png" style="width: 100px; height: 100px;">
+                </a>
+                <div class="testimonial-text rounded text-center p-4" style="background:#aaaaaa">
+                    <p>Air : Signifies movement, communication, and breath.</p>
+                    <h5 class="mb-1">Air</h5>
+                    <span class="fst-italic">Element</span>
+                </div>
+            </div>
+
+            <div class="testimonial-item text-center">
+                <a href="water.html">
+                <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/Water.png" style="width: 100px; height: 100px;">
+            </a>
+                <div class="testimonial-text rounded text-center p-4" style="background: rgb(70, 181, 255);">
+                    <p>Water : Symbolizes fluidity, adaptability, and emotional flow.</p>
+                    <h5 class="mb-1">Water</h5>
+                    <span class="fst-italic">Element</span>
+                </div>
+            </div>
+            <div class="testimonial-item text-center">
+                <a href="fire.html">
+                <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/Fire.png" style="width: 100px; height: 100px;">
+            </a>
+                <div class="testimonial-text rounded text-center p-4" style="background:#ed4252">
+                    <p>Fire : Represents transformation, energy, and passion.</p>
+                    <h5 class="mb-1">Fire</h5>
+                    <span class="fst-italic">Element</span>
+                </div>
+            </div>
+            <div class="testimonial-item text-center">
+                <a href="earth.html">
+                <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/Earth.png" style="width: 100px; height: 100px;">
+            </a>
+                <div class="testimonial-text rounded text-center p-4" style="background: #2eb872">
+                    <p>Earth : Associated with stability, grounding, and solidity.
+                    </p>
+                    <h5 class="mb-1">Earth</h5>
+                    <span class="fst-italic">Element</span>
+                </div>
+            </div>
+            <div class="testimonial-item text-center">
+                <a href="sky.html">
+                <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/Sky.png" style="width: 100px; height: 100px;">
+            </a>
+                <div class="testimonial-text rounded text-center p-4" style="background: #bf8f00">
+                    <p>Ether : Refers to the vastness, interconnectedness, and boundless potential.</p>
+                    <h5 class="mb-1">Sky</h5>
+                    <span class="fst-italic">Element</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+    <!-- Facts Start -->
+    <div class="container-xxl bg-primary facts my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-2 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <i class="fa fa-paper-plane fa-3x text-primary mb-3"></i>
+                    <h1 class="text-white mb-2" data-toggle="counter-up">15</h1>
+                    <p class="text-white mb-0">Air</p>
+                </div>
+                <div class="col-md-6 col-lg-2 text-center wow fadeIn" data-wow-delay="0.3s">
+                    <i class="fa fa-water fa-3x text-primary mb-3"></i>
+                    <h1 class="text-white mb-2" data-toggle="counter-up">20</h1>
+                    <p class="text-white mb-0">Water</p>
+                </div>
+                <div class="col-md-6 col-lg-2 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <i class="fa fa-fire fa-3x text-primary mb-3"></i>
+                    <h1 class="text-white mb-2" data-toggle="counter-up">05</h1>
+                    <p class="text-white mb-0">Fire</p>
+                </div>
+                <div class="col-md-6 col-lg-2 text-center wow fadeIn" data-wow-delay="0.7s">
+                    <i class="fa fa-leaf fa-3x text-primary mb-3"></i>
+                    <h1 class="text-white mb-2" data-toggle="counter-up">30</h1>
+                    <p class="text-white mb-0">Earth</p>
+                </div>
+                <div class="col-md-6 col-lg-2 text-center wow fadeIn" data-wow-delay="0.7s">
+                    <i class="fa fa-moon fa-3x text-primary mb-3"></i>
+                    <h1 class="text-white mb-2" data-toggle="counter-up">09</h1>
+                    <p class="text-white mb-0">Sky</p>
+                </div>
+                <div class="col-md-6 col-lg-2 text-center wow fadeIn" data-wow-delay="0.7s">
+                    <i class="fa fa-tag fa-3x text-primary mb-3"></i>
+                    <h1 class="text-white mb-2" data-toggle="counter-up">79</h1>
+                    <p class="text-white mb-0">Total</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <p><span class="text-primary me-2">#</span>Our Services</p>
+                    <h1 class="display-5 mb-0">Special Services For <span class="text-primary">Elefana</span> Visitors</h1>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-primary h-100 d-flex align-items-center py-4 px-4 px-sm-5">
+                        <i class="fa fa-3x fa-mobile-alt text-white"></i>
+                        <div class="ms-4">
+                            <p class="text-white mb-0">Call for more info</p>
+                            <h2 class="text-white mb-0">+91 9652035838</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <img class="img-fluid mb-3" src="img/icon/icon-9.png" alt="Icon">
+                    <h5 class="mb-3">Provide 3D VR view</h5>
+                    <p>Elefana: Nurturing Curiosity, Celebrating NatureAt Elefana, we're passionate about connecting children with the wonders of the natural world. Inspired by the collaborative spirit of Wikipedia, our interactive platform empowers young minds to explore and learn about the five fundamental elements-earth, water, fire, air, and ether-through the lens of captivating animals.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Animal Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 mb-5 align-items-end wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <p><span class="text-primary me-2">#</span>Our Animals</p>
+                    <h1 class="display-5 mb-0">Let`s See Our <span class="text-primary">Elefana</span> Awsome Animals</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-primary py-3 px-5" href="">Explore More Animals</a>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <a class="animal-item" href="img/animal-md-1.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/AIR/pexels-daniyal-ghanavati-10741-110812.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                        <p class="text-white small text-uppercase mb-0">Air</p>
+                                        <h5 class="text-white mb-0">Bull-Bull</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a class="animal-item" href="img/animal-lg-1.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/WATER/pexels-alohaphotostudio-6149477.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                        <p class="text-white small text-uppercase mb-0">Water</p>
+                                        <h5 class="text-white mb-0">Dolphin</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <a class="animal-item" href="img/animal-lg-2.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/FIRE/main-qimg-f14cc1e77cfc5619e43c485a9d6fefd1-lq.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                        <p class="text-white small text-uppercase mb-0">Fire</p>
+                                        <h5 class="text-white mb-0">Pheniox</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a class="animal-item" href="img/animal-md-2.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/SKY/pexels-nicky-7198834.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                        <p class="text-white small text-uppercase mb-0">Sky</p>
+                                        <h5 class="text-white mb-0">Vulture</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <a class="animal-item" href="img/animal-md-3.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/EARTH/pexels-alex-andrews-271121-2295744.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                        <p class="text-white small text-uppercase mb-0">Earth</p>
+                                        <h5 class="text-white mb-0">Fox</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a class="animal-item" href="img/animal-lg-3.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/FIRE/pexels-alteredsnaps-17231283.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                        <p class="text-white small text-uppercase mb-0">Fire</p>
+                                        <h5 class="text-white mb-0">Salmander</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Animal End -->
+
+
+    <!-- Visiting Hours Start -->
+    <div class="container-xxl bg-primary visiting-hours my-5 py-5 wow fadeInUp" data-wow-delay="0.1s" style="background: linear-gradient(45deg, black, transparent);visibility: visible;animation-delay: 0.1s;animation-name: fadeInUp;">
+        <div class="container py-5" id="contact">
+            <div class="row g-5">
+                <div class="col-md-6 text-light wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-6 text-white mb-5">Contact Info</h1>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>College</td>
+                                <td>Pace Institute of Technology and Sciences</td>
+                            </tr>
+                            <tr>
+                                <td>Resident</td>
+                                <td>Ongole,Andhra Pradesh</td>
+                            </tr>
+                            <tr>
+                                <td>Contact & Mail</td>
+                                <td>
+                                    <p class="mb-2">+91 9652035838</p>
+                                    <p class="mb-0">22KQ1A0544@gmail.com</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Linked In</td>
+                                <td>
+                                    <p class="mb-0"></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Visiting Hours End -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="h-100 bg-light d-flex align-items-center p-5">
+                        <div class="btn-lg-square bg-white flex-shrink-0">
+                            <i class="fa fa-map-marker-alt text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2"><span class="text-primary me-2">#</span>Address</p>
+                            <h5 class="mb-0">Ongole,Ap,India</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="h-100 bg-light d-flex align-items-center p-5">
+                        <div class="btn-lg-square bg-white flex-shrink-0">
+                            <i class="fa fa-phone-alt text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2"><span class="text-primary me-2">#</span>Call Now</p>
+                            <h5 class="mb-0">+91 9652035838</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100 bg-light d-flex align-items-center p-5">
+                        <div class="btn-lg-square bg-white flex-shrink-0">
+                            <i class="fa fa-envelope-open text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2"><span class="text-primary me-2">#</span>Mail Now</p>
+                            <h5 class="mb-0">22KQ1A0544@gmail.com</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p><span class="text-primary me-2">#</span>Queries</p>
+                    <h1 class="display-5 mb-4">Have Any Query? Please Contact Us!</h1>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control bg-light border-0" id="name" placeholder="Your Name">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control bg-light border-0" id="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control bg-light border-0" id="subject" placeholder="Subject">
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control bg-light border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100" style="min-height: 400px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61512.744897606346!2d79.99042383790739!3d15.50880393341811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4b011c10366c03%3A0x6ee40296fd2dbcc5!2sOngole%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1717781431933!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Ongole,Andhra Pradesh</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9652035838</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>22KQ1A0544@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://github.com/GarigalaRaghuBabu"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/raghu-babu-garigala-9484a1301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="#Elements">Elements</a>
+                    <a class="btn btn-link" href="#about">About Us</a>
+                    <a class="btn btn-link" href="#contact">Contact Us</a>
+                </div>
+                <div class="col-lg-3 col-md-6" >
+                    <h5 class="text-light mb-4">Quote</h5>
+                    <p>"In the dance of life, nature is the choreographer, and we are the eager participants."</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
